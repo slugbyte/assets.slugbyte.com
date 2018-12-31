@@ -1,4 +1,4 @@
-all: upload clear-cache
+all: upload 
 
 upload: 
 	aws s3 cp $(PWD)/public/ s3://assets.slugbyte.com --recursive --acl public-read
