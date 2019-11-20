@@ -6,3 +6,5 @@ upload:
 clear-cache:
 	aws cloudfront create-invalidation --distribution-id E2HJCHY5APKHMF --paths '/*'
 
+publish: upload clear-cache
+
